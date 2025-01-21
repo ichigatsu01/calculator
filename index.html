@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/calc.css">
+    <script src="./js/calc.js" defer></script>
+</head>
+<body>
+    <h1>電卓</h1>
+    <p>この電卓では、演算子の優先順位を考慮せず、ボタンを押した順番通りに計算を行います。
+        たとえば『1+2×3』は『(1+2)×3』と計算され、『9』になります。2025.01.21</p>
+    <section class="calculator">
+        <div id="calc_panel" class="calc_panel">0</div><!-- calc_panel -->
+        <div class="calc_body">
+            <div class="num">None</div>
+            <div class="num">None</div>
+            <div class="num func" data-action="clear">C</div>
+            <div class="num" data-action="divide">/</div>
+            <div class="num" data-value="7">7</div>
+            <div class="num" data-value="8">8</div>
+            <div class="num" data-value="9">9</div>
+            <div class="num" data-action="multi">×</div>
+            <div class="num" data-value="4">4</div>
+            <div class="num" data-value="5">5</div>
+            <div class="num" data-value="6">6</div>
+            <div class="num" data-action="subtract">-</div>
+            <div class="num" data-value="1">1</div>
+            <div class="num" data-value="2">2</div>
+            <div class="num" data-value="3">3</div>
+            <div class="num" data-action="add">+</div>
+            <div class="num num-big" data-value="00">00</div>
+            <div class="num" data-value="0">0</div>
+            <div class="num" data-action="equal">=</div>
+        </div><!-- calc_body -->
+    </section>
+</body>
+</html>
